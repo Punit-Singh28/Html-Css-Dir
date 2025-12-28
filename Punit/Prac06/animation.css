@@ -1,0 +1,83 @@
+   
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+*{
+    background: black
+    ;
+}
+ 
+ h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: MonteCarlo;
+    font-size: 40px;
+    color: antiquewhite;
+  }
+  
+   /* <!-- 2d Animation --> */
+.container2{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    font-size:large;
+    background: linear-gradient(to top right,blue,violet,yellow);
+    color: black;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+.translate:hover{
+    transform: translate(-40px, 20px);
+}
+.rotate:hover{
+    transform: rotate(360deg);
+}
+.scale:hover{
+    transform: scale(1.5);
+}
+.skew:hover{
+    transform: skew(20deg, 10deg);
+}
+
+/* 3d Animation */
+.container3{
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    perspective: 600px;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    font-size:large;
+     background: conic-gradient(
+        from 0deg at center,
+        red,green,blue,yellow,red 
+    );
+    color: whitesmoke;
+    text-align: center;
+    transition: transform 1s ease;
+}
+.xaxis:hover{
+    transform: rotateX(360deg);
+    cursor: grab;
+}
+.yaxis:hover{
+    transform: rotateY(360deg);
+    cursor: move;
+}
+.zaxis:hover{
+    transform: rotateZ(360deg);
+    cursor: move;
+}
+.translatez:hover{
+    transform: translateZ(100px);
+    cursor: move;
+}

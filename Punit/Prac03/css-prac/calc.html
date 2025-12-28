@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        :root{
+            --width-1:50%;
+            --height-1:250px;
+            --width-2:30%;
+            --height-2:200px;
+        }
+
+        .cal-apply{
+            width: calc(var(--width-1) + var(--width-2));
+            height: calc(var(--height-1) + var(--height-2));
+            background:teal;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .cal-apply:hover{
+            width: calc(var(--width-1) + var(--width-2) + 20%);
+            height: calc(var(--height-1) + var(--height-2) + 50px);
+            background:cornflowerblue;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        
+        .calc-not-apply{
+            height: 100px;
+            width: 80%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS calc property</h1>
+    <h3>Hello Everyone</h3>
+<div class="cal-apply"></div>
+<div class="calc-not-apply"></div>
+</body>
+</html>

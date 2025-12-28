@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Forms</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>User Details</legend>
+      <br />
+      <form class="form">
+        <label for="name">Name:-</label>
+        <input
+          id="name"
+          required
+          placeholder="Enter Name"
+          type="text"
+          minlength="1"
+          maxlength="15"
+        />
+        <label for="sur">Surname:-</label>
+        <input
+          id="sur"
+          required
+          placeholder="Enter Surname"
+          type="text"
+          minlength="1"
+          maxlength="15"
+        />
+        <br />
+        <br />
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          required
+          id="age"
+          min="1"
+          max="30"
+          style="width: 80px"
+          placeholder="Enter Age"
+        />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          required
+          id="email"
+          placeholder="Enter Email here"
+          minlength="1"
+          maxlength="20"
+        />
+        <br /><br />
+        <label for="pass">Password:</label>
+        <input
+          type="password"
+          required
+          id="pass"
+          placeholder="Enter Email password"
+          minlength="1"
+          maxlength="20"
+        />
+        <br /><br />
+        <fieldset>
+          <legend>Gender</legend>
+          <label for="male">Male</label>
+          <input type="radio" required id="male" />
+          <label for="female">Female</label>
+          <input type="radio" required id="female" />
+        </fieldset>
+        <br />
+        <label for="phone">Phne No:</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter Phone Number"
+          minlength="1"
+          maxlength="10"
+        />
+        <br /><br />
+        <label for="country">Country</label>
+        <select id="country">
+          <option value="ind">india</option>
+          <option value="usa">America</option>
+          <option value="pak">Pakistan</option>
+        </select>
+        <input list="country" placeholder="Enter Contry Name" />
+        <datalist id="country">
+          <option value="ind">india</option>
+          <option value="usa">America</option>
+          <option value="pak">Pakistan</option>
+        </datalist>
+        <br /><br />
+        <label for="time">Time</label>
+        <input type="time" />
+        <br /><br />
+        <label for="date">date</label>
+        <input type="date" />
+        <label for="week">week</label>
+        <input type="week" />
+        <br /><br />
+        <label for="hy">hy</label>
+        <input id="hy" type="checkbox" />
+        <input type="range" />
+        <br /><br />
+        <label for="file">Choose File</label>
+        <input type="file" id="file" />
+        <label for="img">Tokyo image</label>
+        <input
+          type="image"
+          src="../utils/Images/tokyo.webp"
+          height="50px"
+          width="100px"
+          id="img"
+        />
+        <br /><br />
+        <input type="submit" />
+        <input type="reset" value="clear form" />
+      </form>
+    </fieldset>
+  </body>
+</html>

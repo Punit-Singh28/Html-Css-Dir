@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outline</title>
+    <style>
+      .container {
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        padding: 10px 10px;
+        background-color: transparent;
+        border-radius: 50px;
+        outline: 2px solid black;
+        outline-offset: -7px;
+        border-top: 0;
+        border-bottom: 0;
+      }
+
+      table{
+        border: 2px outset black;
+      }
+      th,td{
+        border: 2px inset black;
+      }
+      ul{
+        list-style:lower-greek;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button>button</button>
+    </div>
+    <br />
+    <h1>Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>sr. no</th>
+          <th>Subject</th>
+          <th>Timing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>1</td>
+            <td>Maths</td>
+            <td>9am - 12pm</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <ul>
+        <li>Punit</li>
+        <li>Rajesh</li>
+        <li>Singh</li>
+    </ul>
+  </body>
+</html>

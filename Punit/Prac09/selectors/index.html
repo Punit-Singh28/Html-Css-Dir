@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      /* child selectors [ > ] */
+      #div {
+        height: 300px;
+        width: 100%;
+        background-color: black;
+      }
+      h1 {
+        color: red;
+      }
+      #div > h1:first-child {
+        color: aqua;
+      }
+      #div > h1:last-child {
+        color: teal;
+      }
+      #div > h1:nth-child(3) {
+        color: tan;
+      }
+      
+      /* next to subling combinators [ + ] */
+      .sib-parent{
+        background: indianred;
+      }
+      .sib-parent > h1 + h1 {
+        color: brown;
+      }
+      .sib-parent > h1 + h2 {
+        color: grey;
+      }
+
+      /* Descedent Combintors */
+      .parent{
+        background: maroon;
+      }
+      .parent p {
+        color: blueviolet;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- child -->
+    <div id="div">
+      <h1>Hello I'm First Child</h1>
+      <h1>Hello I'm second Child</h1>
+      <h1>Hello I'm third Child</h1>
+      <h1>Hello I'm last Child</h1>
+    </div>
+
+    <!-- next to child -->
+    <div class="sib-parent">
+      <h1>h1(1)</h1>
+      <h1>h1(2)</h1>
+      <h1>h1(3)</h1>
+      <h2>h2(1)</h2>
+    </div>
+
+    <!-- Descedent Combintors -->
+    <div class="parent">
+      <div class="child">
+        <div class="sub-child">
+          <p>Hello</p>
+        </div>
+      </div>
+      <p>Hello</p>
+      <h1>how are you</h1>
+    </div>
+  </body>
+</html>

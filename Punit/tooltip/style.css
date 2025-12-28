@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 50vh;
+    margin: 50px auto;
+    width: 80%;
+    /* background: pink; */
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 10px 30px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+}
+.tool-tip{
+    opacity: 0; /*  colour visibility 0 means colour will not visible and 1 means full colour visible and 0.5 means colour visibility ration increase or decrace within the range of 0-1*/
+    visibility: hidden;
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    top: 120px;
+    left: 640px;
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 15px 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* border-radius: 20%; */
+
+}
+.box:hover .tool-tip{
+    opacity: 1;
+    /* content: ''; */
+    visibility: visible;
+
+}
+.tool-tip::before{
+    content: '';
+    visibility: visible;
+    position: absolute;
+    top: 54px;
+    left: 71px;
+    z-index: 9;
+    border: 15px solid;
+    border-color: cornflowerblue transparent transparent transparent;
+    
+}

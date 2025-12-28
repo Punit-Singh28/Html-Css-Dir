@@ -1,0 +1,19 @@
+.main-nav{
+    background: grey; 
+    color: green ;
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+}
+.image{
+    position: sticky;
+    height: 200px;
+    top: 20px;
+    bottom: 20px;
+    right: 0;
+}
+
+.nav-item > a, .navbar-brand
+{
+    color: #fff !important;
+}

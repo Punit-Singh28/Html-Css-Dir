@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML | Practice</title>
+    <link
+      rel="shortcut icon"
+      href="../utils/Images/tokyo.webp" //importing images
+      type="image/x-icon"
+    />
+    <style>
+      body{
+        background-color: black;
+        color: white;
+      }
+      .canva {
+        border-radius: 50%;
+      }
+      .c2 {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <!-- <hr /> -->
+    <marquee
+      behavior="alternate"
+      bgcolor="red"
+      height="100px"
+      style="font-size: 50px"
+      >WELCOME TO..!!!</marquee
+    >
+    <marquee
+      behavior="alternate"
+      direction="right"
+      height="100px"
+      style="font-size: 50px"
+      >TOKYO</marquee
+    >
+    <!-- <marquee
+      style="background-color: antiquewhite"
+      behavior="scroll"
+      direction="down"
+      >hello scroll</marquee
+    > -->
+    <!-- <marquee
+      height="100px"
+      style="background-color: cyan"
+      behavior="scroll"
+      direction="down"
+      >hello scroll</marquee
+    > -->
+
+    <!-- <marquee
+      direction="down"
+      width="250"
+      height="200"
+      behavior="alternate"
+      class="outlined"
+    >
+      <marquee behavior="alternate">This text will bounce</marquee>
+    </marquee> -->
+    <figure>
+      <img src="../utils/Images/tokyo.webp" alt="DRIFT" />
+      <figcaption><b>TOKYO DRIFT</b></figcaption>
+      <figcaption>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+        placeat, voluptates molestiae sapiente dicta suscipit consequuntur quas
+        aperiam minus repellendus eaque rerum officiis excepturi beatae? Numquam
+        magnam dicta saepe nemo.
+      </figcaption>
+      <audio
+        src="../utils/audios/six_days.mp3"
+        controls
+        autoplay
+        loop
+        muted
+      ></audio>
+    </figure>
+    <hr />
+    <!-- <video src="./utils/GIFS/tenor_1.gif" height="400px" width="500px"></video> -->
+    <video
+      src="../utils/videos/lamborgini.mp4"
+      controls
+      loop
+      height="500px"
+      width="500px"
+      muted
+      autoplay
+    ></video>
+    <hr />
+    <canvas
+      id="canvas"
+      class="canva"
+      height="800px"
+      width="800px"
+      style="border: 9px solid cyan"
+    >
+    </canvas>
+    <hr />
+    <canvas
+      id="c1"
+      class="c2"
+      height="400px"
+      width="400px"
+      style="border: 5px solid yellowgreen"
+    >
+    </canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(410, 2);
+    ctx.lineTo(410, 410);
+    ctx.strokeStyle = "green";
+    ctx.lineWidth = 10;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.strokeStyle = "blue";
+    ctx.moveTo(730, 250);
+    ctx.lineTo(410, 410);
+    ctx.lineWidth = 7;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.fillStyle = "red";
+    ctx.arc(410, 410, 10, 0, 2 * Math.PI);
+    ctx.fill();
+
+    //Practise
+    const c = document.getElementById("c1");
+    const a = c.getContext("2d");
+    a.beginPath();
+    a.moveTo(50, 50);
+    a.lineTo(200, 200);
+    a.strokeStyle = "green";
+    a.lineWidth = 7;
+    a.stroke();
+
+    // const a = document.getElementById("myclass");
+    // const b=a.getContext("2d")
+  </script>
+</html>

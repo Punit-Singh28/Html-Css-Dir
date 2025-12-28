@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=MonteCarlo&family=Sixtyfour&display=swap');
+*{
+    background: black;
+    color: aquamarine;
+}
+.main{
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+    font-family: MonteCarlo;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.test{
+    font-variant-caps: small-caps;
+     text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Momo Signature", cursive;
+    font-weight: 200;
+}
+
+.test:hover{
+    transition: all 0.3s ease;
+    transform: scale(2, 1);
+    cursor: 
+    wait;
+}
+
+/* Animation 1 */
+.animation-1{
+    margin-top: 40px;
+    animation-name: first;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    text-align: center;
+    font-weight: 400;
+    font-size: 85px;
+    font-family: MonteCarlo;
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+
+@keyframes first {
+    0%{
+        translate: 200vw 0;
+        scale: 200% 1;
+    }
+    100%{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+/* Animation 2 */
+.animation-2{
+    margin-top: 40px;
+    /* animation-name: second;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    animation: second 3s infinite alternate-reverse;
+    text-align: center;
+    font-weight: 400;
+    font-size: 85px;
+    font-family: MonteCarlo;
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+@keyframes second {
+    from{
+        translate: -200vw 0;
+        scale: 200% 1;
+    }
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+/* Anmation-Logo */
+.logo-animation{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+}
+.logo-animation>img{
+    height: 200px;
+    width: 200px;
+    animation: logo 3s 0s infinite linear;
+    cursor:grabbing;
+}
+@keyframes logo {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transition: all 3s ease;
+        transform: rotate(360deg);
+    }
+}
+
+/* Linear Gradient */
+.linear-grad{
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to top right,red,green,blue,yellow);
+}
+
+/* Text */
+.text{
+    background: linear-gradient(to left bottom,brown,rgba(255, 166, 0, 0.404),black);
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 90px;
+    font-weight: 900;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+/* Radial gradient */
+.radial-grad{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    background: radial-gradient(circle,grey,black,white);
+}
+
+/* Radial gradient text */
+
+.radial-grad-1{
+    background: radial-gradient(circle,grey,purple,white);
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 90px;
+    font-weight: 900;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Conic gradient */
+.conic-grad{
+    margin-top: 30px;
+    height: 200px;
+    width: 100%;
+    background: conic-gradient(
+        from 0deg at center,
+        red,green,blue,yellow,red 
+    );
+}
