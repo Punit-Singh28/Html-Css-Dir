@@ -1,0 +1,32 @@
+[type='password']{
+    color: aqua;
+}
+
+button[type='submit']{
+    color: blueviolet;
+}
+
+input::placeholder{
+    color: chocolate;
+    text-transform: uppercase;
+}
+
+/* Counter */
+
+body{
+    counter-reset: count;
+}
+
+.main::before{
+    counter-increment: count;
+    content: "✌️ -" counter(count)" ";
+}
+
+.word{
+    column-count: 3;
+    column-rule: double;
+    column-gap: 10px;
+    column-rule-color: aqua;
+    column-rule-style: dotted;
+    background: tan;
+}

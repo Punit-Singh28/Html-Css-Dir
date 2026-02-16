@@ -1,0 +1,34 @@
+.container {
+  /* max-width it takes the maximnum width of a screen and provide width to the content */
+  width: 100%;
+  /* it shift the whole content of the container
+     */
+  float: inline-start;
+  border: 2px solid red;
+}
+
+.child1 {
+  background: teal;
+  display: block;
+}
+.child2 {
+  background: grey;
+  display: inline;
+}
+.child3 {
+  background: cyan;
+  display: inline-block;
+}
+.child4 {
+  background: greenyellow;
+}
+.child5 {
+  background: purple;
+  display: inline;
+}
+.child6 {
+  background: tan;
+}
+span{
+    background: red;
+}

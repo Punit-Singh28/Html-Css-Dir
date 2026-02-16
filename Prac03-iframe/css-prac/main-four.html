@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Four Concept</title>
+    <style>
+      /* opacity */
+      .cont-img {
+        border: 1px slid red;
+        text-align: center;
+      }
+      .cont-img > img {
+        width: 250px;
+        height: 350px;
+        opacity: 0.3;
+        transition: all 0.3s ease-in;
+      }
+      .cont-img > img:hover {
+        opacity: 1;
+        cursor: grab;
+        transition: all o.3s ease-out;
+      }
+
+      /* Scale */
+      .cont-scale {
+        height: 300px;
+        width: 400px;
+        margin: 50px auto;
+      }
+      img {
+        height: inherit;
+        width: inherit;
+        margin: auto;
+        scale: 0.2;
+        transition: all 0.3s ease-out;
+      }
+      img:hover {
+        scale: 1;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+      }
+
+      /* Rotation */
+      .cont {
+        height: 50vh;
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 50px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: cadetblue;
+        color: brown;
+        line-height: 100px;
+        text-align: center;
+      }
+      .child-2 {
+        transform: rotate(60deg);
+      }
+      .child-3 {
+        transform: rotate(90deg);
+      }
+      .child-4 {
+        transform: rotate(180deg);
+      }
+      .child-5 {
+        transform: rotate(360deg);
+      }
+      .child-6 {
+        transform: rotateX(30deg);
+      }
+      .child-7 {
+        transform: rotateY(190deg);
+      }
+      .child-8 {
+        transform: rotateZ(50deg);
+      }
+
+      /* Skew */
+      .container{
+        border: 1px solid red;
+        height: 50vh;
+        gap: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1{
+        width: 100px;
+        height: 100px;
+        background: gray;
+      }
+      .child-11{
+        transform: skewX(50deg);
+      }
+      .child-22{
+        transform: skewY(50deg);
+      }
+      .child-33{
+        transform: skew(20deg, 20deg);
+      }
+      .child-44{
+        transform: skewX(50deg, 60deg);
+      }
+      .child-55{
+        transform: skewX(40deg, -20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Opacity -->
+    <div class="cont-img">
+      <img src="../../utils/Images/bappa.webp" alt="Bappa" />
+      <h3>Ganpati bappa Morya</h3>
+      <hr />
+    </div>
+<hr>
+    <!-- Scale -->
+    <div class="cont-scale">
+      <img src="../../utils/Images/smile.webp" alt="Smile" />
+    </div>
+<hr>
+    <!-- Rotation -->
+    <div class="cont">
+      <div class="box child-1">Normal</div>
+      <div class="box child-2">rotate 60</div>
+      <div class="box child-3">rotate 90</div>
+      <div class="box child-4">rotate 180</div>
+      <div class="box child-5">rotate 360</div>
+      <div class="box child-6">rotate x-axis</div>
+      <div class="box child-7">rotate y-axis</div>
+      <div class="box child-8">rotate z-axis</div>
+    </div>
+<hr>
+    <!-- Skew -->
+     <div class="container">
+        <div class="box1 child-11"></div>
+      <div class="box1 child-22"></div>
+      <div class="box1 child-33"></div>
+      <div class="box1 child-44"></div>
+      <div class="box1 child-55"></div>
+     </div>
+  </body>
+</html>
